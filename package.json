@@ -1,0 +1,23 @@
+{
+  "name": "02-objects-and-classes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-aimurphy/02-Objects-and-Classes.git"
+  },
+  "author": "Ai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-aimurphy/02-Objects-and-Classes/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-aimurphy/02-Objects-and-Classes#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0"
+  }
+}
