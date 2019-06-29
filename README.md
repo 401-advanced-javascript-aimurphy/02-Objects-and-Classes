@@ -6,9 +6,8 @@
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [![Build Status](https://travis-ci.com/401-advanced-javascript-aimurphy/02-Objects-and-Classes.svg?branch=master)](https://travis-ci.com/401-advanced-javascript-aimurphy/02-Objects-and-Classes)
+
 
 #### Documentation
 * [api docs](http://xyz.com) (API servers)
