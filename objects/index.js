@@ -1,6 +1,6 @@
 'use strict';
 
-const VehicleConstructor = require('./vehicle-constructor.js');
+const VehicleConstructor = require('./vehicle-class.js');
 
 // Implement a car and motorcycle using a Constructor
 const mazda = new VehicleConstructor.Car('Mazda 3');
