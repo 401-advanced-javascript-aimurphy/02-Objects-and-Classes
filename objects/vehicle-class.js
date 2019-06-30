@@ -6,9 +6,8 @@
 // module.exports = Car;
 
 class Vehicle{
-  constructor(name, wheels){
+  constructor(name){
     this.name = name;
-    this.wheels = wheels;
   }
   drive(){
     return 'Moving Forward';
@@ -18,17 +17,19 @@ class Vehicle{
   }
 }
 
-
+// use super
 class Car extends Vehicle{
-  // wheels(){
-  //   return 4;
-  // }
+  constructor(name, wheels){
+    super(name)
+    this.wheels=4;
+  }
 }
 
 class Motorcycle extends Vehicle{
-  // wheels(){
-  //   return 2;
-  // }
+  constructor(name, wheels){
+    super(name)
+    this.wheels=2;
+  }
   wheelie(){
     return 'Wheee!';
   }
