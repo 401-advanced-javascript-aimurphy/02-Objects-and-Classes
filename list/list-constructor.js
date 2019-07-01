@@ -13,7 +13,7 @@ List.prototype.push = function(item) {
   this.length++;
 };
 
-/**
+/*
  * // Remove an item from the end of the list and return it's value
  * @returns {*}
  */
@@ -50,7 +50,11 @@ function(item){
 
 //list.forEach
 //iterates over an array does not mutate returns nothing.
-
+List.prototype.forEach = function(callback){
+  for (let i=0;i<this.length;i++){
+    callback(this.data[i],i);
+  }
+};
 
 //list.map
 //returns a new array with a callback executed on each element
@@ -63,4 +67,19 @@ List.prototype.map = function(callback){
   return returnValue;
 };
 
+//list.filter
+//returns new array containing previous array elements whose values returned true against filtering criteria 
+List.prototype.map = function(callback){
+  let returnValue = new List();
+  for (let i=0;i<this.length;i++){
+    console.log(i, this.data[i]);
+    returnValue.push(callback(this.data[i],i));
+  }
+  return returnValue;
+};
+
+//list.reduce
+//returns a single value derived from all the values in the array.
+
 module.exports = List;
+
