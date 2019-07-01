@@ -7,7 +7,7 @@ class List {
     this.data = {};
   }
 
-  /**
+  /*
    * Add item to the end of the list
    * @param item
    */
@@ -17,7 +17,7 @@ class List {
     this.length++;
   }
 
-  /**
+  /*
    * // Remove an item from the end of the list and return it's value
    * @returns {*}
    */
