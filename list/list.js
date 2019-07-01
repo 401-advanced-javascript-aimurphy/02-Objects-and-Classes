@@ -39,18 +39,18 @@ class List {
     delete this.data[this.length - 1];
     this.length--;
     return returnValue;
-  };
+  }
 
   // unshift
   // adds item(s) to the beginning of an array and returns the new length of the array
   unshift(item) {
-      for (let i = this.length - 1; i >= 0; i--) {
-        this.data[i + 1] = this.data[i];
-      }
-      this.data[0] = item;
-      this.length++;
-      return this.length;
-    };
+    for (let i = this.length - 1; i >= 0; i--) {
+      this.data[i + 1] = this.data[i];
+    }
+    this.data[0] = item;
+    this.length++;
+    return this.length;
+  }
 
   //forEach
   //iterates over an array does not mutate returns nothing.
@@ -58,7 +58,7 @@ class List {
     for (let i = 0; i < this.length; i++) {
       callback(this.data[i], i);
     }
-  };
+  }
 
   //map
   //returns a new array with a callback executed on each element
@@ -69,7 +69,7 @@ class List {
       returnValue.push(callback(this.data[i], i));
     }
     return returnValue;
-  };
+  }
 
   //filter
   //returns new array containing previous array elements whose values returned true against filtering criteria 
@@ -80,7 +80,7 @@ class List {
       returnValue.push(callback(this.data[i], i));
     }
     return returnValue;
-  };
+  }
 
 
 
