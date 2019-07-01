@@ -73,17 +73,9 @@ class List {
 
   //filter
   //returns new array containing previous array elements whose values returned true against filtering criteria 
-  map(callback) {
-    let returnValue = new List();
-    for (let i = 0; i < this.length; i++) {
-      console.log(i, this.data[i]);
-      returnValue.push(callback(this.data[i], i));
-    }
-    return returnValue;
-  }
 
-
-
+  //reduce
+  //returns a single value derived from all the values in the array.
 }
 
 module.exports = List;
