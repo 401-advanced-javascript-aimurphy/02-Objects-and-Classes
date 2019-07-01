@@ -20,14 +20,14 @@ class Vehicle{
 // use super
 class Car extends Vehicle{
   constructor(name, wheels){
-    super(name)
+    super(name);
     this.wheels=4;
   }
 }
 
 class Motorcycle extends Vehicle{
   constructor(name, wheels){
-    super(name)
+    super(name);
     this.wheels=2;
   }
   wheelie(){
