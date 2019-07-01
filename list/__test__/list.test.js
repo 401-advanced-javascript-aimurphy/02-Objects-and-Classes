@@ -2,7 +2,7 @@
 
 // These 2 should be interchangeable!
 // const List = require('../list.js');
-const List = require('../list-constructor.js');
+const List = require('../list.js');
 
 describe('List Data Structure', () => {
 
@@ -50,6 +50,19 @@ describe('List Data Structure', () => {
     stuff.pop();
     stuff.shift();
     stuff.unshift('d');
+    expect(stuff.length).toEqual(2);
+    expect(stuff.data[0]).toEqual('d');
+  });
+
+  it('iterates over an array does not mutate returns nothing', () => {
+    let stuff = new List();
+    stuff.push('a');
+    stuff.push('b');
+    stuff.push('c');
+    stuff.pop();
+    stuff.shift();
+    stuff.unshift('d');
+    stuff.forEach(x=>console.log(x));
     expect(stuff.length).toEqual(2);
     expect(stuff.data[0]).toEqual('d');
   });
