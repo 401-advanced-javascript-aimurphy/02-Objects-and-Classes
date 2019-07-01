@@ -10,34 +10,22 @@
 
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+
 
 ### Modules
-#### `modulename.js`
+#### `list-constructor.js`, `list.js`, `vehicle-constructor.js`, `vehicle-class.js`
 ##### Exported Values and Methods
+###### `push`, `pop`, `shift`, `unshift`, `map`
 
 ###### `foo(thing) -> string`
 Usage Notes or examples
 
 ###### `bar(array) -> array`
 Usage Notes or examples
-
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
-
-#### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
   
 #### Tests
 * How do you run tests?
+under the file directory in the command line we type in npm  test and run the test
 * What assertions were made?
 * What assertions need to be / should be made?
 
